@@ -55,9 +55,9 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-green-50 rounded-full px-4 py-2 mb-6">
-            <span className="text-2xl mr-2">💕</span>
-            <span className="text-green-700 font-medium">Happy Families</span>
+          <div className="section-tag section-tag-green">
+            <span className="text-xl">💕</span>
+            <span>Happy Families</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Success Stories from
@@ -114,10 +114,7 @@ const Testimonials = () => {
 
           {/* Navigation */}
           <div className="flex justify-center gap-4 mt-8">
-            <button
-              onClick={prevTestimonial}
-              className="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
-            >
+            <button onClick={prevTestimonial} className="btn-circle">
               <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
@@ -137,10 +134,7 @@ const Testimonials = () => {
               ))}
             </div>
             
-            <button
-              onClick={nextTestimonial}
-              className="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
-            >
+            <button onClick={nextTestimonial} className="btn-circle">
               <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

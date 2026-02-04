@@ -43,9 +43,9 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-orange-50 rounded-full px-4 py-2 mb-6">
-            <span className="text-2xl mr-2">⭐</span>
-            <span className="text-orange-700 font-medium">Our Services</span>
+          <div className="section-tag section-tag-orange">
+            <span className="text-xl">⭐</span>
+            <span>Our Services</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             How We Help Dogs
@@ -95,16 +95,10 @@ const Services = () => {
             there are many ways to help our furry friends find their forever homes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#contact"
-              className="bg-white text-orange-600 px-8 py-4 rounded-full font-semibold hover:bg-orange-50 transition-colors"
-            >
+            <a href="#contact" className="btn-cta-white">
               Get Involved Today
             </a>
-            <a
-              href="#dogs"
-              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors"
-            >
+            <a href="#dogs" className="btn-cta-outline">
               View Available Dogs
             </a>
           </div>

@@ -52,9 +52,9 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-orange-50 rounded-full px-4 py-2 mb-6">
-            <span className="text-2xl mr-2">📬</span>
-            <span className="text-orange-700 font-medium">Get In Touch</span>
+          <div className="section-tag section-tag-orange">
+            <span className="text-xl">📬</span>
+            <span>Get In Touch</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Meet Your
@@ -80,7 +80,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all outline-none"
+                    className="input-styled"
                     placeholder="John Doe"
                   />
                 </div>
@@ -140,10 +140,7 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white py-4 rounded-xl font-semibold text-lg transition-all"
-              >
+              <button type="submit" className="btn-submit">
                 Send Message 🐾
               </button>
             </form>

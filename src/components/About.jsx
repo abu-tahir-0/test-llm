@@ -56,8 +56,9 @@ const About = () => {
 
           {/* Content */}
           <div>
-            <div className="inline-flex items-center bg-orange-50 rounded-full px-4 py-2 mb-6">
-              <span className="text-orange-700 font-medium">About Our Shelter</span>
+            <div className="section-tag section-tag-orange">
+              <span className="text-xl">🏠</span>
+              <span>About Our Shelter</span>
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
