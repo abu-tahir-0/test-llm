@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsitive Futures | Dog Adoption</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f97316',
+                        secondary: '#fbbf24',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-paw text-primary text-2xl"></i>
+                    <span class="text-xl font-bold tracking-tight">Pawsitive<span class="text-primary">Futures</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-primary transition">Home</a>
+                    <a href="#gallery" class="hover:text-primary transition">Adopt</a>
+                    <a href="#about" class="hover:text-primary transition">About Us</a>
+                    <a href="#contact" class="hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 py-4 space-y-4">
+            <a href="#home" class="block hover:text-primary">Home</a>
+            <a href="#gallery" class="block hover:text-primary">Adopt</a>
+            <a href="#about" class="block hover:text-primary">About Us</a>
+            <a href="#contact" class="block hover:text-primary">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=2000" alt="Happy Dog" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Find Your New <br><span class="text-secondary">Best Friend</span></h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Giving every dog a second chance at a happy life. Browse our adoptable dogs today.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#gallery" class="bg-primary hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition transform hover:scale-105">Meet Our Dogs</a>
+                <a href="#about" class="bg-white/20 hover:bg-white/30 backdrop-blur-md text-white border border-white/50 px-8 py-4 rounded-full font-bold text-lg transition">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Adoptable Dogs</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">These lovable pups are looking for their forever homes. Could you be the one?</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="dog-grid">
+                <!-- Dog Card 1 -->
+                <div class="group bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=800" alt="Buddy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <span class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">Active</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Buddy</h3>
+                        <p class="text-gray-500 mb-4"><i class="fas fa-calendar-alt mr-2"></i>2 Years Old • Golden Retriever</p>
+                        <p class="text-gray-600 mb-6">Buddy is a high-energy pup who loves playing fetch and long walks in the park.</p>
+                        <button class="w-full bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-primary transition">Adopt Buddy</button>
+                    </div>
+                </div>
+
+                <!-- Dog Card 2 -->
+                <div class="group bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80&w=800" alt="Luna" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <span class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">Calm</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Luna</h3>
+                        <p class="text-gray-500 mb-4"><i class="fas fa-calendar-alt mr-2"></i>4 Years Old • Beagle Mix</p>
+                        <p class="text-gray-600 mb-6">Luna is a gentle soul who enjoys afternoon naps and belly rubs. Great with kids!</p>
+                        <button class="w-full bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-primary transition">Adopt Luna</button>
+                    </div>
+                </div>
+
+                <!-- Dog Card 3 -->
+                <div class="group bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=800" alt="Max" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <span class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">Playful</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Max</h3>
+                        <p class="text-gray-500 mb-4"><i class="fas fa-calendar-alt mr-2"></i>1 Year Old • French Bulldog</p>
+                        <p class="text-gray-600 mb-6">Max is a small dog with a big personality. He's looking for an adventurous owner.</p>
+                        <button class="w-full bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-primary transition">Adopt Max</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-orange-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1444212477490-ca407925329e?auto=format&fit=crop&q=80&w=1000" alt="Our Team" class="rounded-3xl shadow-2xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6">Our Mission</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        At Pawsitive Futures, we believe that every dog deserves a loving home. Since 2015, we have rescued and rehomed over 2,000 dogs from across the country.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <i class="fas fa-heart text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl">Compassionate Care</h4>
+                                <p class="text-gray-600">We provide medical care and training for all our rescues.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <i class="fas fa-home text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl">Careful Matching</h4>
+                                <p class="text-gray-600">We ensure every dog is matched with the perfect family environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-gray-600">Have questions about adoption? Send us a message!</p>
+            </div>
+            <form id="contact-form" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                        <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                    <select class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                        <option>Adoption Inquiry</option>
+                        <option>Volunteering</option>
+                        <option>Donations</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                    <textarea rows="5" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-primary hover:bg-orange-600 text-white font-bold py-4 rounded-xl transition shadow-lg">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="fas fa-paw text-primary text-2xl"></i>
+                        <span class="text-xl font-bold">Pawsitive Futures</span>
+                    </div>
+                    <p class="text-gray-400">Making the world a better place, one paw at a time.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#gallery" class="hover:text-white transition">Adoptable Dogs</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Pawsitive Futures Dog Adoption. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form Submission Handling
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        });
+
+        // Simple Scroll Animation for Nav
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
