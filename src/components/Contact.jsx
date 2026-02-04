@@ -92,7 +92,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all outline-none"
+                    className="input-styled"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -106,7 +106,7 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all outline-none"
+                    className="input-styled"
                     placeholder="(555) 123-4567"
                   />
                 </div>
@@ -116,7 +116,7 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all outline-none bg-white"
+                    className="input-styled bg-white"
                   >
                     <option value="adoption">Dog Adoption</option>
                     <option value="foster">Foster Program</option>
@@ -135,7 +135,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all outline-none resize-none"
+                  className="input-styled resize-none"
                   placeholder="Tell us about yourself and what you're looking for..."
                 ></textarea>
               </div>
